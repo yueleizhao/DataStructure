@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="isPrimeNumber.cpp">
+    <ClCompile Include="matrixMultiplication.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

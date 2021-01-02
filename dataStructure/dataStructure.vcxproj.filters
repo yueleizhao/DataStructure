@@ -13,10 +13,13 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="源文件\王道">
+      <UniqueIdentifier>{5625a54b-7b2a-425a-a1d6-3339bb0d3f1b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="dataStructure.cpp">
-      <Filter>源文件</Filter>
+    <ClCompile Include="division_algorithm.cpp">
+      <Filter>源文件\王道</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

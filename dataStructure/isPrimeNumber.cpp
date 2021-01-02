@@ -23,5 +23,5 @@ int main() {
 	std::cin >> value;
 	isPrimeNumber(value);
 	
-	return 0；
+	return 0;
 }

@@ -1,7 +1,7 @@
 #include<iostream>
 
 /*
- * *判断一个数是否为 prime number
+ * 判断一个数是否为 prime number
  */
 
 
@@ -22,4 +22,6 @@ int main() {
 	int value;
 	std::cin >> value;
 	isPrimeNumber(value);
+	
+	return 0；
 }

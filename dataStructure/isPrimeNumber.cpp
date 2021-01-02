@@ -1,7 +1,7 @@
 #include<iostream>
 
 /*
- *ÅĞ¶ÏÒ»¸öÊıÊÇ·ñÎª prime number
+ * *åˆ¤æ–­ä¸€ä¸ªæ•°æ˜¯å¦ä¸º prime number
  */
 
 

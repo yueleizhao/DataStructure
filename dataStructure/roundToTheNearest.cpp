@@ -1,7 +1,7 @@
 #include<iostream>
 
 /*
- *½«Ò»¸öÐ¡ÊýËÄÉáÎåÈë±£ÁôÁ½Î»Ð¡Êý 
+ *å°†ä¸€ä¸ªå°æ•°å››èˆäº”å…¥ä¿ç•™ä¸¤ä½å°æ•° 
  */
 
 double roundToTheNearest(double value) {
@@ -14,5 +14,5 @@ int main() {
 	double value;
 	std::cin >> value;
 	std::cout << roundToTheNearest(value);
-
+	return 0;
 }

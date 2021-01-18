@@ -18,7 +18,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sortAlgorithm\insertionSortDichotomy.cpp">
+    <ClCompile Include="sortAlgorithm\shellSort.cpp">
       <Filter>源文件\sortAlgorithm</Filter>
     </ClCompile>
   </ItemGroup>

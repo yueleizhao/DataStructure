@@ -2,6 +2,7 @@
 #include<iostream>
 #include<stdlib.h>
 #include<stdio.h> 
+#include<vector>
 using namespace std;
 /**
  * 动态内存分配
@@ -47,6 +48,18 @@ int main() {
 			printf("%d", arr4[i][j]);
 
 		}
+	vector<vector<int> > arr5(n, vector<int>(m));
+	//fun(vector<vector<int> > arr5，n) 函数形参 
+
+	for (int i = 0; i < n; i++)
+		for (int j = 0; j < m; j++) {
+
+			arr5[i][j] = i + j;
+			printf("%d", arr5[i][j]);
+
+		}
+
+
 
 	return 0;
 }

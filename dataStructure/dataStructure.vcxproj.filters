@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sortAlgorithm\quickSort.cpp">
+    <ClCompile Include="basic\conversion_of_number_systems.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

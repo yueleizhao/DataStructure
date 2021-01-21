@@ -9,7 +9,6 @@ using namespace std;
  */
 
 
-
 int main() {
 	int n = 0, m = 0;
 
@@ -61,5 +60,18 @@ int main() {
 
 
 
-	return 0;
+	
+	vector<vector<int> > arr5(n, vector<int>(m));
+	//fun(vector<vector<int> > arr5,n) 函数形参 
+
+	for (int i = 0; i < n; i++)
+		for (int j = 0; j < m; j++) {
+
+			arr5[i][j] = i + j;
+			printf("%d", arr5[i][j]);
+
+		}
+
+
+              return 0;
 }

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sortAlgorithm\bubbleSort.cpp">
+    <ClCompile Include="sortAlgorithm\quickSort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="sortAlgorithm\countingSort.cpp">
+    <ClCompile Include="basic\isPrime.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

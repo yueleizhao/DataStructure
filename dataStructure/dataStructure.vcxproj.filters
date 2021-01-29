@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="basic\isPrime.cpp">
+    <ClCompile Include="basic\getPrime.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

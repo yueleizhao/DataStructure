@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="basic\stringOperation.cpp">
+    <ClCompile Include="basic\STL_vector.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

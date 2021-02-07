@@ -44,6 +44,7 @@ int main()
 	int n = sizeof(A) / sizeof(int);
 	InsertionSort(A, n);
 	std::cout << "插入排序结果:" << "\n";
+	
 	for (int i = 0; i < n; i++)
 	{
 		printf("%d ", A[i]);

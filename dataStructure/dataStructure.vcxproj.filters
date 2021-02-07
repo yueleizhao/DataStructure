@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="basic\matrix_multiplication.cpp">
+    <ClCompile Include="basic\string_operation.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

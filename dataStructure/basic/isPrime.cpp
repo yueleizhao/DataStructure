@@ -37,6 +37,21 @@ bool isPrime_MIN(int n) {
 	return true;
 }
 
+//第三种方法
+
+void isPrimeNumber(int value) {
+	int i;
+	for (i = 2; i < value; i++)
+		if (value%i == 0) {
+			std::cout << value << " is not prime number" << "\n";
+			break;
+			
+		}
+	
+	if (i == value)std::cout << value << " is prime number" << "\n";
+
+}
+
 int main() {
 	int n;
 	cin >> n;
@@ -49,6 +64,8 @@ int main() {
 		cout << isPrime_MIN(n);
 
 	}
-
+	
+	isPrimeNumber(n);
+	
 	return 0;
 }

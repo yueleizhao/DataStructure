@@ -27,6 +27,7 @@
  // 稳定性 ------------ 不稳定
 
 
+
 void Swap(int A[], int i, int j)
 {
 	int temp = A[i];

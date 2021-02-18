@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="basic\string_operation.cpp">
+    <ClCompile Include="advanced\1059.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

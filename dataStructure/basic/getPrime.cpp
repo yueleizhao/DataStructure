@@ -91,6 +91,7 @@ int main() {
 
 	int prime[MAX] = { 0 };
 	getPrime2(prime);
+	
 	for (int i = 0; prime[i] != 0; i++) {
 		cout << prime[i] << ' ';
 	}

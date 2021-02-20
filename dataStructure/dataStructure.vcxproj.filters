@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="advanced\1059.cpp">
+    <ClCompile Include="basic\a_problem_about_n!.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

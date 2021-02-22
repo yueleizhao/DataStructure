@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="basic\binary_search.cpp">
+    <ClCompile Include="basic\binary_power.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

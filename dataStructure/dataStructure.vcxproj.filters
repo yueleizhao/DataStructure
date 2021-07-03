@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="basic\number_of_combinations_2.cpp">
+    <ClCompile Include="basic\SqeStack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

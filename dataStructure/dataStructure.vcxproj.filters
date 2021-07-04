@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="basic\SqeStack.cpp">
+    <ClCompile Include="basic\LinkStack.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

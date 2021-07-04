@@ -1,7 +1,7 @@
 #include<iostream>
 #define MAXSIZE 20 /* 存储空间初始分配量 */
 using namespace std;
-typedef int ElemType; /* SElemType类型根据实际情况而定，这里假设为int */
+typedef int ElemType; /* ElemType类型根据实际情况而定，这里假设为int */
 
 typedef struct
 {

@@ -3,7 +3,7 @@
 using namespace std;
 typedef int ElemType; /* ElemType类型根据实际情况而定，这里假设为int */
 
-/*浪费一个存储空间*/
+/*利用辅助变量 size 判断队满或者对空*/
 
 /* 循环队列的顺序存储结构 */
 typedef struct
@@ -11,19 +11,21 @@ typedef struct
 	ElemType data[MaxSize];
 	int front;    	/* 头指针 */
 	int rear;		/* 尾指针，若队列不空，指向队列尾元素的下一个位置 */
+	int size;    /* 队列当前大小 */
 }SqQueue;
 
 /*初始化队列*/
 bool InitQueue(SqQueue *Q)
 {
 	Q->front = Q->rear = 0;
+	Q->size = 0;
 	return true;
 }
 
 /*判断队列是否为空*/
 bool QueueEmpty(SqQueue Q)
 {
-	if (Q.front == Q.rear)/* 队列空的标志 */
+	if (Q.size == 0)
 		return true;
 	else
 		return false;
@@ -32,28 +34,30 @@ bool QueueEmpty(SqQueue Q)
 /*入队列*/
 bool EnQueue(SqQueue *Q, ElemType x)
 {
-	if ((Q->rear + 1) % MaxSize == Q->front)	/* 队列满的判断 */
+	if (Q->size == MaxSize)	/* 队列满的判断 */
 		return false;
 	Q->data[Q->rear] = x;
 	Q->rear = (Q->rear + 1) % MaxSize; /* rear指针向后移一位置，若到最后则转到数组头部 */
+	Q->size++;
+
 	return  true;
 }
 
 /* 若队列不空，则删除Q中队头元素*/
 bool DeQueue(SqQueue *Q, ElemType &x)
 {
-	if (Q->front == Q->rear)			/* 队列空的判断 */
+	if (Q->size == 0)			/* 队列空的判断 */
 		return false;
 	x = Q->data[Q->front];
 	Q->front = (Q->front + 1) % MaxSize;	/* front指针向后移一位置,若到最后则转到数组头部 */
-
+	Q->size--;
 	return true;
 }
 
 /*获取头部元素*/
 bool GetHead(SqQueue Q, ElemType &x)
 {
-	if (Q.front == Q.rear) /* 队列空 */
+	if (Q.size == 0) /* 队列空 */
 		return false;
 	x = Q.data[Q.front];
 	return true;
@@ -62,7 +66,7 @@ bool GetHead(SqQueue Q, ElemType &x)
 /*队列长度*/
 int QueueLength(SqQueue Q)
 {
-	return  (Q.rear - Q.front + MaxSize) % MaxSize;
+	return  Q.size;
 }
 
 /* 从队头到队尾依次对队列Q中每个元素输出 */
@@ -81,6 +85,7 @@ bool QueueTraverse(SqQueue Q)
 bool ClearQueue(SqQueue *Q)
 {
 	Q->front = Q->rear = 0;
+	Q->size = 0;
 	return true;
 }
 
@@ -94,7 +99,7 @@ int main()
 		cout << "初始化后，队列为空!" << "\n";
 	}
 
-	for (int i = 1; i <= MaxSize - 1; i++)
+	for (int i = 1; i <= MaxSize; i++)
 	{
 		EnQueue(&Q, i);
 	}
@@ -120,5 +125,6 @@ int main()
 	GetHead(Q, cnt);
 
 	cout << cnt;
+
 	return 0;
 }

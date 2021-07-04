@@ -3,6 +3,8 @@
 using namespace std;
 typedef int ElemType; /* ElemType类型根据实际情况而定，这里假设为int */
 
+/*浪费一个存储空间*/
+
 /* 循环队列的顺序存储结构 */
 typedef struct
 {
